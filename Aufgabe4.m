@@ -30,7 +30,7 @@ function [m,b] = a7()
 % Finden Sie die Werte für m und b (auf den Messungen y ist ein Messfehler)
 % geben Sie m und b zurück.
 %% Ihr Code:
-data = readtable('data.csv');
+data = readtable('linear_data.csv');
 x = data{:, 1};
 y = data{:, 2};
 c = polyfit(x,y,1);
